@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.snake-head {
+    background: #22c55e;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 8px rgba(34,197,94,0.8),
+                0 0 16px rgba(34,197,94,0.6);
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: white;
+        border-radius: 50%;
+        top: 4px;
+    }
+
+    &::before {
+        left: 4px;
+    }
+
+    &::after {
+        right: 4px;
+    }
+}
+
+.snake-body {
+    background: #4ade80;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(34,197,94,0.5);
+}
+
+.food {
+    background: radial-gradient(circle at 30% 30%, #f87171, #b91c1c);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255,0,0,0.7),
+                0 0 20px rgba(255,0,0,0.4);
+}
