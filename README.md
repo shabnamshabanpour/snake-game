@@ -1,7 +1,7 @@
 # snake-game
 **This is a snake game.**
 
-🌐[Demo Project]()
+🌐[Demo Project](https://shabnamshabanpour.github.io/snake-game/)
 
 ** **
 
